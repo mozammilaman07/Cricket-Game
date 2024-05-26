@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>Bat Ball Stump Game</h1>
+
+    <button onclick="
+    let userchoice = 'You have chosen Bat';
+    generateComputerChoice();
+    computerChoice;
+    let computerAns = `Compter chooses ${computerChoice}`;
+    let finalAns = getResult('Bat',computerChoice);
+    showResult(userchoice,computerAns,finalAns);"
+    class="buton">
+    <img src="bat.webp" alt=""></button>
+
+    <button  onclick="
+    let userchoice = 'You have chosen Ball';
+    generateComputerChoice();
+    computerChoice;
+    let finalAns = getResult('Ball',computerChoice);
+    let computerAns = `Compter chooses ${computerChoice}`;
+    showResult(userchoice,computerAns,finalAns);
+    "class="buton"><img src="ball.jpg" alt=""></button>
+
+    <button  onclick="
+    let userchoice = 'You have chosen Stump';
+    let randomNumber = Math.random() *3;
+    generateComputerChoice();
+    computerChoice;
+    let computerAns = `Compter chooses ${computerChoice}`;
+    let finalAns = getResult('Stump',computerChoice);
+    showResult(userchoice,computerAns,finalAns);
+    "class="buton" ><img src="stump.png" alt="">  </button> 
+
+    <h3 id="user_move"></h3>
+    <h3 id="computer_move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+    
+    <button onclick="
+    localStorage.clear()
+    resetScore();
+    " class="reset">Reset</button>
+
+  
+
+    
+
+    
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
